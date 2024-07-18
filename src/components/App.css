@@ -1,0 +1,154 @@
+
+.nav {
+    width: 250px;
+    background-color: #ffffff; 
+    padding: 1px;
+    box-shadow: 2px 0 1px rgba(0,0,0,0.1); 
+    height: 100%;
+  }
+  
+
+  .nav-item {
+    margin-bottom: 15px; 
+    
+  }
+  
+  .nav-item:last-child {
+    margin-bottom: 0; 
+  }
+
+  .nav-link {
+    display: block;
+    color: #007bff;
+    text-decoration: none; 
+    padding: 15px 15px;
+    border-radius: 2px; 
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .nav-link:hover {
+    background-color: #ece9ef;
+    color: #0056b3;
+  }
+  
+  .nav-link:active {
+    background-color: #007bff; 
+    color: #fff; 
+  }
+   
+  /* tutorial.css */
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General styling for the body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Container for each page */
+.content-wrapper {
+  width: 100%;
+ 
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.content-wrapper:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Section styling */
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #2c3e50;
+  font-size: 2.5em;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #3498db;
+  font-size: 2em;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+/* Paragraph styling */
+p {
+  margin: 15px 0;
+  font-size: 1.15em;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* List styling */
+ul {
+  list-style-type: disc;
+  margin: 10px 0 10px 20px;
+  padding: 0;
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #555;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+/* Code block styling */
+pre {
+  background: #2c3e50;
+  color: #ecf0f1;
+  padding: 25px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+  background: #ecf0f1;
+  color: #2c3e50;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+/* Navigation link styling */
+.nav-link {
+  color: #3498db;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #ecf0f1;
+  color: #2980b9;
+}
+
+.nav-link:active {
+  background-color: #3498db;
+  color: #ffffff;
+}
