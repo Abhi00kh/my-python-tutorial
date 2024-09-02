@@ -119,59 +119,59 @@ const dropdownMenuStyle = {
 };
 
 const dropdownItemStyle = {
-  padding: '0.5rem 1rem', // Adjust padding as needed
+  padding: '0.5rem 1rem',
 };
 
 function BasicExample() {
+  const repoName = '/my-python-tutorial';
+
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="/">Python Tutorial</Navbar.Brand>
+        <Navbar.Brand href={`${repoName}/`}>Python Tutorial</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/python-home">Home</Nav.Link>
+            <Nav.Link href={`${repoName}/python-home`}>Home</Nav.Link>
             <NavDropdown title="Tutorials" id="basic-nav-dropdown" style={dropdownStyle}>
-              <NavDropdown.Item href="/python-get-started" style={dropdownItemStyle}>Python Get Started</NavDropdown.Item>
+              <NavDropdown.Item href={`${repoName}/python-get-started`} style={dropdownItemStyle}>Python Basics</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown title="Data Types" style={{ ...dropdownStyle, ...dropdownMenuStyle }}>
-                <NavDropdown.Item href="/python-data-types" style={dropdownItemStyle}>Overview</NavDropdown.Item>
-                <NavDropdown.Item href="/python-numbers" style={dropdownItemStyle}>Numbers</NavDropdown.Item>
-                <NavDropdown.Item href="/python-strings" style={dropdownItemStyle}>Strings</NavDropdown.Item>
-                <NavDropdown.Item href="/python-booleans" style={dropdownItemStyle}>Booleans</NavDropdown.Item>
-                <NavDropdown.Item href="/python-lists" style={dropdownItemStyle}>Lists</NavDropdown.Item>
-                <NavDropdown.Item href="/python-tuples" style={dropdownItemStyle}>Tuples</NavDropdown.Item>
-                <NavDropdown.Item href="/python-sets" style={dropdownItemStyle}>Sets</NavDropdown.Item>
-                <NavDropdown.Item href="/python-dictionaries" style={dropdownItemStyle}>Dictionaries</NavDropdown.Item>
+                <NavDropdown.Item href={`${repoName}/python-data-types`} style={dropdownItemStyle}>Overview</NavDropdown.Item>
+                <NavDropdown.Item href={`${repoName}/python-numbers`} style={dropdownItemStyle}>Numbers</NavDropdown.Item>
+                <NavDropdown.Item href={`${repoName}/python-strings`} style={dropdownItemStyle}>Strings</NavDropdown.Item>
+                <NavDropdown.Item href={`${repoName}/python-booleans`} style={dropdownItemStyle}>Booleans</NavDropdown.Item>
+                <NavDropdown.Item href={`${repoName}/python-lists`} style={dropdownItemStyle}>Lists</NavDropdown.Item>
+                <NavDropdown.Item href={`${repoName}/python-tuples`} style={dropdownItemStyle}>Tuples</NavDropdown.Item>
+                <NavDropdown.Item href={`${repoName}/python-sets`} style={dropdownItemStyle}>Sets</NavDropdown.Item>
+                <NavDropdown.Item href={`${repoName}/python-dictionaries`} style={dropdownItemStyle}>Dictionaries</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown.Divider />
               <NavDropdown title="Control Flow" style={{ ...dropdownStyle, ...dropdownMenuStyle }}>
-                <NavDropdown.Item href="/python-if-else" style={dropdownItemStyle}>If...Else</NavDropdown.Item>
-                <NavDropdown.Item href="/python-while-loops" style={dropdownItemStyle}>While Loops</NavDropdown.Item>
-                <NavDropdown.Item href="/python-for-loops" style={dropdownItemStyle}>For Loops</NavDropdown.Item>
+                <NavDropdown.Item href={`${repoName}/python-if-else`} style={dropdownItemStyle}>If...Else</NavDropdown.Item>
+                <NavDropdown.Item href={`${repoName}/python-while-loops`} style={dropdownItemStyle}>While Loops</NavDropdown.Item>
+                <NavDropdown.Item href={`${repoName}/python-for-loops`} style={dropdownItemStyle}>For Loops</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown.Divider />
               <NavDropdown title="Functions" style={{ ...dropdownStyle, ...dropdownMenuStyle }}>
-                <NavDropdown.Item href="/python-functions" style={dropdownItemStyle}>Functions Overview</NavDropdown.Item>
-                <NavDropdown.Item href="/python-lambda" style={dropdownItemStyle}>Lambda Functions</NavDropdown.Item>
+                <NavDropdown.Item href={`${repoName}/python-functions`} style={dropdownItemStyle}>Functions Overview</NavDropdown.Item>
+                <NavDropdown.Item href={`${repoName}/python-lambda`} style={dropdownItemStyle}>Lambda Functions</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown.Divider />
               <NavDropdown title="Object Oriented Programming" style={{ ...dropdownStyle, ...dropdownMenuStyle }}>
-                <NavDropdown.Item href="/python-oops" style={dropdownItemStyle}>Overview</NavDropdown.Item>
-                <NavDropdown.Item href="/python-classes" style={dropdownItemStyle}>Classes</NavDropdown.Item>
-                <NavDropdown.Item href="/python-Inheritance" style={dropdownItemStyle}>Inheritance</NavDropdown.Item>
-                <NavDropdown.Item href="/python-polymorphism" style={dropdownItemStyle}>Polymorphism</NavDropdown.Item>
-                <NavDropdown.Item href="/python-abstraction" style={dropdownItemStyle}>Abstraction</NavDropdown.Item>
+                <NavDropdown.Item href={`${repoName}/python-oops`} style={dropdownItemStyle}>Object Oriented Programming</NavDropdown.Item>
+                <NavDropdown.Item href={`${repoName}/python-classes`} style={dropdownItemStyle}>Classes</NavDropdown.Item>
+                <NavDropdown.Item href={`${repoName}/python-inheritance`} style={dropdownItemStyle}>Inheritance</NavDropdown.Item>
+                <NavDropdown.Item href={`${repoName}/python-polymorphism`} style={dropdownItemStyle}>Polymorphism</NavDropdown.Item>
+                <NavDropdown.Item href={`${repoName}/python-abstraction`} style={dropdownItemStyle}>Abstraction</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/python-iterators" style={dropdownItemStyle}>Iterators</NavDropdown.Item>
-              <NavDropdown.Item href="/python-scope" style={dropdownItemStyle}>Scope</NavDropdown.Item>
-              <NavDropdown.Item href="/python-modules" style={dropdownItemStyle}>Modules</NavDropdown.Item>
-              <NavDropdown.Item href="/python-arrays" style={dropdownItemStyle}>Arrays</NavDropdown.Item>
+              <NavDropdown.Item href={`${repoName}/advanced-python`} style={dropdownItemStyle}>Advanced Python</NavDropdown.Item>
+              <NavDropdown.Item href={`${repoName}/python-projects`} style={dropdownItemStyle}>Python Projects</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/blog">Blog</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
-            <Nav.Link href="/contact">Contact</Nav.Link>
+            <Nav.Link href={`${repoName}/blog`}>Blog</Nav.Link>
+            <Nav.Link href={`${repoName}/about`}>About</Nav.Link>
+            <Nav.Link href={`${repoName}/contact`}>Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -180,4 +180,5 @@ function BasicExample() {
 }
 
 export default BasicExample;
+
 
