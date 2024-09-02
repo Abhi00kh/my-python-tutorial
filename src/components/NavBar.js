@@ -119,7 +119,7 @@ const dropdownMenuStyle = {
 };
 
 const dropdownItemStyle = {
-  padding: '0.5rem 1rem',
+  padding: '0.5rem 1rem', // Adjust padding as needed
 };
 
 function BasicExample() {
@@ -132,7 +132,7 @@ function BasicExample() {
           <Nav className="me-auto">
             <Nav.Link href="/python-home">Home</Nav.Link>
             <NavDropdown title="Tutorials" id="basic-nav-dropdown" style={dropdownStyle}>
-              <NavDropdown.Item href="/python-get-started" style={dropdownItemStyle}>Python Basics</NavDropdown.Item>
+              <NavDropdown.Item href="/python-get-started" style={dropdownItemStyle}>Python Get Started</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown title="Data Types" style={{ ...dropdownStyle, ...dropdownMenuStyle }}>
                 <NavDropdown.Item href="/python-data-types" style={dropdownItemStyle}>Overview</NavDropdown.Item>
@@ -157,14 +157,17 @@ function BasicExample() {
               </NavDropdown>
               <NavDropdown.Divider />
               <NavDropdown title="Object Oriented Programming" style={{ ...dropdownStyle, ...dropdownMenuStyle }}>
-                <NavDropdown.Item href="/python-oops" style={dropdownItemStyle}>Object Oriented Programming Overview</NavDropdown.Item>
+                <NavDropdown.Item href="/python-oops" style={dropdownItemStyle}>Overview</NavDropdown.Item>
                 <NavDropdown.Item href="/python-classes" style={dropdownItemStyle}>Classes</NavDropdown.Item>
                 <NavDropdown.Item href="/python-Inheritance" style={dropdownItemStyle}>Inheritance</NavDropdown.Item>
                 <NavDropdown.Item href="/python-polymorphism" style={dropdownItemStyle}>Polymorphism</NavDropdown.Item>
                 <NavDropdown.Item href="/python-abstraction" style={dropdownItemStyle}>Abstraction</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/python-projects" style={dropdownItemStyle}>Python Projects</NavDropdown.Item>
+              <NavDropdown.Item href="/python-iterators" style={dropdownItemStyle}>Iterators</NavDropdown.Item>
+              <NavDropdown.Item href="/python-scope" style={dropdownItemStyle}>Scope</NavDropdown.Item>
+              <NavDropdown.Item href="/python-modules" style={dropdownItemStyle}>Modules</NavDropdown.Item>
+              <NavDropdown.Item href="/python-arrays" style={dropdownItemStyle}>Arrays</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/blog">Blog</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
